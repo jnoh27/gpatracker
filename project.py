@@ -178,5 +178,6 @@ def show_course():
             num_grade += 1
         print(f"{i+1}: {course['course_name']} | {course['grade']} | {num_grade} | AP: {course['AP']}")
 
+# only run if main is called
 if __name__ == "__main__":
     main()
