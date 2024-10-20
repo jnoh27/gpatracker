@@ -1,5 +1,5 @@
 import sys
-from distutils.dep_util import newer
+import csv
 
 courses = []
 # Dictionary for letter grade to GPA conversion
@@ -18,6 +18,7 @@ grade_conversion = {
 }
 
 def main():
+    load_courses_from_csv()
     # display menu for user
     while True:
         print("1. Add Course and Grade")
@@ -50,6 +51,7 @@ def main():
         elif choice == 6:
             show_course()
         elif choice == 7:
+            save_courses_to_csv()
             sys.exit("Exiting program.")
         else:
             print("Invalid choice, please try again.")
@@ -117,9 +119,7 @@ def calculate_gpa():
 
 def predict_new_gpa():
     # Show the user current course
-    for i in range(len(courses)):
-        course = courses[i]
-        print(f"{i + 1}: {course['course_name']}")
+    show_course()
 
     while True:
         try:
@@ -132,7 +132,7 @@ def predict_new_gpa():
 
     for i in range(num):
         try:
-            course_index = int(input("Enter the number of the course you want to change: ").strip()) - 1
+            course_index = int(input("Enter the index number of the course you want to change: ").strip()) - 1
             original_grades.append((course_index, courses[course_index]["grade"]))
 
             new_grade = input("Enter hypothetical grade (e.g., A, B+, etc.): ").upper().strip()
@@ -153,15 +153,12 @@ def remove_course():
         return
 
     # Show the user current course
-    for i in range(len(courses)):
-        course = courses[i]
-        course_name = course["course_name"]
-        print(f"{i+1}: {course_name}")
+    show_course()
 
     # Prompt the user to select the course to remove
     while True:
         try:
-            course_index = int(input("Enter the number of the course you want to remove: ").strip()) - 1
+            course_index = int(input("Enter the index number of the course you want to change: ").strip()) - 1
             removed_course = courses.pop(course_index)
             print(f"Course {removed_course['course_name']} removed successfully!")
             break
@@ -177,6 +174,29 @@ def show_course():
         if course['AP']:
             num_grade += 1
         print(f"{i+1}: {course['course_name']} | {course['grade']} | {num_grade} | AP: {course['AP']}")
+
+def save_courses_to_csv():
+    with open('courses.csv', 'w', newline='') as csvfile:
+        fieldnames = ['course_name', 'grade', 'credit', 'AP']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for course in courses:
+            writer.writerow(course)
+
+def load_courses_from_csv():
+    try:
+        with open('courses.csv', 'r') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                course = {
+                    "course_name": row['course_name'],
+                    "grade": row['grade'],
+                    "credit": float(row['credit']),
+                    "AP": row['AP'] == 'True'
+                }
+                courses.append(course)
+    except FileNotFoundError:
+        pass
 
 # only run if main is called
 if __name__ == "__main__":
