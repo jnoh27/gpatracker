@@ -1,4 +1,5 @@
 import sys
+from distutils.dep_util import newer
 
 courses = []
 # Dictionary for letter grade to GPA conversion
@@ -172,7 +173,10 @@ def remove_course():
 def show_course():
     for i in range(len(courses)):
         course = courses[i]
-        print(f"{i+1}: {course['course_name']} | {course['grade']} | {grade_conversion[course['grade']]} | AP: {course['AP']}")
+        num_grade = grade_conversion[course['grade']]
+        if course['AP']:
+            num_grade += 1
+        print(f"{i+1}: {course['course_name']} | {course['grade']} | {num_grade} | AP: {course['AP']}")
 
 if __name__ == "__main__":
     main()
