@@ -7,4 +7,4 @@ Has these features:
 4. Course list organizer
 
 Feel free to use it yourself!
-To use, download the project.py file on your computer and run it using interpretor.
+To use, download the project.py file on your computer and run it using a interpretor.
