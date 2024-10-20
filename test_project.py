@@ -1,7 +1,6 @@
 import pytest
 from project import add_course, update_grade, calculate_gpa, predict_new_gpa, remove_course, courses
 
-# Test for adding a normal course
 def test_add_normal_course():
     # Clear the courses list to ensure a clean state
     courses.clear()
