@@ -111,7 +111,7 @@ def calculate_gpa():
         if grade_conversion[course["grade"]] == 0.0:
             continue
         if course["AP"]:
-            total_grade += 1
+            total_grade += 0.5
 
     final_gpa = total_grade / total_credit
     return final_gpa
@@ -122,7 +122,7 @@ def predict_new_gpa():
 
     while True:
         try:
-            num = int(input("How many courses do you want to hyptehtically change?: ").strip())
+            num = int(input("How many courses do you want to hypothetically change?: ").strip())
             break
         except ValueError:
             print("Please enter a numerical value.")
@@ -171,7 +171,7 @@ def show_course():
         course = courses[i]
         num_grade = grade_conversion[course['grade']]
         if course['AP']:
-            num_grade += 1
+            num_grade += 0.5
         print(f"{i+1}: {course['course_name']} | {course['grade']} | {num_grade} | AP: {course['AP']}")
 
 def save_courses_to_csv():
