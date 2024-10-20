@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f144f8-f297-4384-9e00-ae81100836c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="59f144f8-f297-4384-9e00-ae81100836c8" name="Changes" comment="Modified show courses function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +67,31 @@
       <option name="presentableId" value="Default" />
       <updated>1729394019597</updated>
     </task>
+    <task id="LOCAL-00001" summary="GPA Calc codee finished">
+      <option name="closed" value="true" />
+      <created>1729399128854</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729399128854</updated>
+    </task>
+    <task id="LOCAL-00002" summary="GPA Calc codee finished">
+      <option name="closed" value="true" />
+      <created>1729399399221</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729399399221</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Modified show courses function">
+      <option name="closed" value="true" />
+      <created>1729399452796</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729399452796</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,5 +104,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="GPA Calc codee finished" />
+    <MESSAGE value="Modified show courses function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified show courses function" />
   </component>
 </project>
