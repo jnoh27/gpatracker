@@ -2,7 +2,6 @@ import sys
 import csv
 
 courses = []
-# Dictionary for letter grade to GPA conversion
 grade_conversion = {
     "A": 4.0,
     "A-": 3.7,
