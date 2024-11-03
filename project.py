@@ -169,7 +169,6 @@ def remove_course():
 def show_course():
     for i in range(len(courses)):
         course = courses[i]
-        print(course['grade'])
         num_grade = grade_conversion[course['grade']]
         if course['AP']:
             num_grade += 0.5
