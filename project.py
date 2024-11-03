@@ -93,7 +93,7 @@ def add_course():
 
 def update_grade():
     course_name = input("Enter course name you want to update grade for: ").strip().upper()
-    grade = grade_conversion[input("Enter new grade (e.g., A, B+, etc.): ").strip().upper()]
+    grade = input("Enter new grade (e.g., A, B+, etc.): ").strip().upper()
     for course in courses:
         if course["course_name"] == course_name:
             course["grade"] = grade
@@ -169,6 +169,7 @@ def remove_course():
 def show_course():
     for i in range(len(courses)):
         course = courses[i]
+        print(course['grade'])
         num_grade = grade_conversion[course['grade']]
         if course['AP']:
             num_grade += 0.5
