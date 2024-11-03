@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f144f8-f297-4384-9e00-ae81100836c8" name="Changes" comment="Created test python file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="59f144f8-f297-4384-9e00-ae81100836c8" name="Changes" comment="Fixed AP overweight problem">
+      <change afterPath="$PROJECT_DIR$/courses.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,34 +23,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jnoh27"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jnoh27&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jnoh27/gpatracker.git",
-    "accountId": "1b12b86b-c561-46b2-a7f6-7f98bc4687b0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jnoh27/gpatracker.git&quot;,
+    &quot;accountId&quot;: &quot;1b12b86b-c561-46b2-a7f6-7f98bc4687b0&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ngU4FOkrz8GtOPNqnIbG74AzKB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.project.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.project.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -106,7 +107,31 @@
       <option name="project" value="LOCAL" />
       <updated>1729399762673</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Created test python file">
+      <option name="closed" value="true" />
+      <created>1729401370669</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729401370669</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Saved to csv">
+      <option name="closed" value="true" />
+      <created>1729401407372</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729401407372</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed AP overweight problem">
+      <option name="closed" value="true" />
+      <created>1729401734462</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729401734462</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +149,8 @@
     <MESSAGE value="GPA Calc codee finished" />
     <MESSAGE value="Modified show courses function" />
     <MESSAGE value="Created test python file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created test python file" />
+    <MESSAGE value="Saved to csv" />
+    <MESSAGE value="Fixed AP overweight problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed AP overweight problem" />
   </component>
 </project>
